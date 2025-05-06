@@ -121,14 +121,11 @@ ul.artist-list{
     display: flex;
     flex-direction: column;
     gap: 0px;
+    padding: 8px 0px;
 }
 
 ul.artist-list li{
     padding: 4px 8px;
-}
-
-ul.artist-list li:nth-child(odd) {
-    background-color:#ffffff90;
 }
 
 .featured-image,
@@ -197,6 +194,7 @@ ul.artist-list li:nth-child(odd) {
     }
 
     ul.artist-list{
+        padding: 0px;
         padding-top: 16px;
         gap: 16px;
     }
