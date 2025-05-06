@@ -80,8 +80,7 @@ img {
   position: fixed;
   top: 14px;
   right: 14px;
-  z-index: 999;
-  width: 40px;
+  z-index:32px;
 }
 
 .grid-container {
