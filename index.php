@@ -113,7 +113,7 @@
         gsap.from(projectRows, {
             opacity: 0,
             y: 50,
-            duration: 0.4,
+            duration: 0.3,
             stagger: {
                 each: 0.2,
                 onComplete: function () {
