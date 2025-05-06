@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html>HEY
 <head>
     <title><?php bloginfo('name'); ?></title>
     <meta charset="<?php bloginfo('charset'); ?>">
