@@ -123,11 +123,11 @@ ul.artist-list{
     display: flex;
     flex-direction: column;
     gap: 0px;
-    padding: 8px 0px;
+    padding: 4px 0px;
 }
 
 ul.artist-list li{
-    padding: 4px 8px;
+    padding: 2px 8px;
 }
 
 .featured-image,
