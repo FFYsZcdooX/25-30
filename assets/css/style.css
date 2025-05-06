@@ -76,7 +76,7 @@ img {
 .logo {
   position: fixed;
   top: 16px;
-  right: 8px;
+  right: 16px;
   z-index: 999;
   width: 40px;
 }
