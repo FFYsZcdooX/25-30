@@ -78,9 +78,11 @@
                 // Display tags for the parent post
                 $tags = get_the_tags();
                 if (!empty($tags)) {
+                    echo '<ul class="work-list">';
                     foreach ($tags as $tag) {
-                        echo '<p>' . esc_html($tag->name) . '</p>';
+                        echo '<li>' . esc_html($tag->name) . '</li>';
                     }
+                    echo '</ul>';
                 } else {
                     echo '<p>No tags available</p>';
                 }

@@ -19,7 +19,8 @@ body {
 }
 
 p,
-.artist-list li{   
+.artist-list li,
+.work-list li{   
 font-family: "proxima-nova", sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -102,18 +103,32 @@ img {
     border-top: none;
 }
 
-.work{
+.work-list li:not(:last-child)::after {
+    content: ', ';
+}
+
+ul.work-list{
+    list-style: none;
+    margin: 0;
     display: flex;
+    flex-direction: row;
     gap: 4px;
 }
 
 ul.artist-list{
     list-style: none;
-    padding: 4px 0 0 0;
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 0px;
+}
+
+ul.artist-list li{
+    padding: 4px 8px;
+}
+
+ul.artist-list li:nth-child(odd) {
+    background-color:#ffffff90;
 }
 
 .featured-image,
@@ -165,19 +180,15 @@ ul.artist-list{
         grid-column: span 3;
     }
 
-    .work{
-        flex-direction: column;
-        gap: 8px;
-    }
-
     .logo{
         width: 64px;
         top: 40px;
-  right: 40px;
+        right: 40px;
     }
 
     p{
         font-size: 16px;
+        line-height: 16px;
     }
 
     .project-title p{
@@ -189,9 +200,29 @@ ul.artist-list{
         padding-top: 16px;
         gap: 16px;
     }
-    .artist-list li{
+
+    ul.artist-list li{
+        padding: 0px;
         font-size: 16px;
     }
+
+    ul.artist-list li:nth-child(odd) {
+        background-color: transparent;
+    }
+
+    ul.work-list{
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .work-list li{
+        font-size: 16px;
+    }
+
+    .work-list li:not(:last-child)::after {
+        content: ' ';
+    }
+
     .featured-image,
     .artist-image {
         top: 40px;
